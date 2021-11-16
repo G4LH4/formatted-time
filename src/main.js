@@ -1,4 +1,4 @@
-export function easierDate(options) {
+function easierDate(options) {
   const date = new Date();
 
   const todayDate =
@@ -15,3 +15,5 @@ export function easierDate(options) {
     return todayDate + " " + time;
   }
 }
+
+module.exports.easierDate = easierDate;

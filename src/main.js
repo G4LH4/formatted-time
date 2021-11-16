@@ -1,17 +1,18 @@
 export function easierDate(options) {
   const date = new Date();
 
-  const todayDate =
-    date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+  const todayDate = `${
+    date.getMonth() + 1
+  } / ${date.getDate()} / ${date.getFullYear()}`;
 
-  const time =
-    date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+  const time = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
 
-  if (options === "getDate") {
-    return todayDate;
-  } else if (options === "getTime") {
-    return time;
-  } else if (options === "getTime&date") {
-    return todayDate + " " + time;
+  switch (options) {
+    case "getDate":
+      return todayDate;
+    case "getTime":
+      return time;
+    case "getTime&date":
+      return `${time} ${todayDate}`;
   }
 }

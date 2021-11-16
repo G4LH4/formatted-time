@@ -13,6 +13,9 @@ import { getFormattedTime } from 'formatted-time';
 
 getFormattedTime('Y-M-D h:m:s'); 
 
+// E.g
+'2021-11-16 18:40:13'
+
 ```
 
 # Options available

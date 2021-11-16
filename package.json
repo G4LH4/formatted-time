@@ -1,5 +1,5 @@
 {
-  "name": "get-easier-date",
+  "name": "formatted-time",
   "type": "module",
   "version": "1.0.0",
   "description": "An easiest way to implement the javascript Date",

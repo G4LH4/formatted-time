@@ -11,7 +11,7 @@ export const getFormattedTime = (format) => {
     };
 
   const splitMsg = format.split("");
-  const result = splitMsg.map((v) => time[v] || v);
+  const result = splitMsg.map((v) => time[v] ?? v);
   const joinStr = result.join("");
 
   return joinStr;

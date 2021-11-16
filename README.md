@@ -29,7 +29,8 @@ getFormattedTime('Y-M-D h:m:s');
 
 Keep in main that any other character will be added to the string
 
-```getFormattedTime('Y-M-D h:m:s hello'); 
+```
+getFormattedTime('Y-M-D h:m:s hello'); 
 
 // E.g
 '2021-11-16 18:40:13 hello'

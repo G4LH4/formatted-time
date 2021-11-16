@@ -1,4 +1,4 @@
-function getTime(options) {
+export function easierDate(options) {
   const date = new Date();
 
   const todayDate =
@@ -15,5 +15,3 @@ function getTime(options) {
     return todayDate + " " + time;
   }
 }
-
-export default getTime;

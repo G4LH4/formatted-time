@@ -4,12 +4,12 @@ This library was made whit the purpose of implement the javascript ```Date``` in
 
 # Installation
 
-`npm i easierDate --save`
+`npm i get-easier-date --save`
 
 Then you can do: 
 
 ```
-import { eaiserDate } from 'easierDate';
+import { easierDate } from 'get-easier-date';
 
 easierDate(getDate);
 ```

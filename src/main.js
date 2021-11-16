@@ -7,11 +7,11 @@ function easierDate(options) {
   const time =
     date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-  if (options === "getDate") {
+  if (options.date === "getDate") {
     return todayDate;
-  } else if (options === "getTime") {
+  } else if (options.date === "getTime") {
     return time;
-  } else if (options === "getTime&date") {
+  } else if (options.date === "getTime&date") {
     return todayDate + " " + time;
   }
 }

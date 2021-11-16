@@ -1,4 +1,4 @@
-function easierDate(options) {
+export function easierDate(options) {
   const date = new Date();
 
   const todayDate =
@@ -7,14 +7,11 @@ function easierDate(options) {
   const time =
     date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-  if (options.date === "getDate") {
+  if (options === "getDate") {
     return todayDate;
-  } else if (options.date === "getTime") {
+  } else if (options === "getTime") {
     return time;
-  } else if (options.date === "getTime&date") {
+  } else if (options === "getTime&date") {
     return todayDate + " " + time;
   }
 }
-
-const _easierDate = easierDate;
-export { _easierDate as easierDate };

@@ -16,4 +16,5 @@ function easierDate(options) {
   }
 }
 
-module.exports.easierDate = easierDate;
+const _easierDate = easierDate;
+export { _easierDate as easierDate };

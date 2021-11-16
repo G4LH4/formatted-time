@@ -1,29 +1,25 @@
 # What is this?
 
-This library was made whit the purpose of implement the javascript ```Date``` in an easier way
+This library was made whit the purpose of use easier way to get the date
 
 # Installation
 
-`npm i get-easier-date --save`
+`npm i formatted-time --save`
 
 Then you can do: 
 
 ```
-import { easierDate } from 'get-easier-date';
+import { getFormattedTime } from 'formatted-time';
 
-easierDate(getDate);
+getFormattedTime('Y-M-D h:m:s'); 
+
 ```
 
-# Options
-
-This library supports all the javascript default `Date` options:
-
-* Date.prototype.getDate()
-* Date.prototype.getDay()
-* Date.prototype.getFullYear()
-* Date.prototype.getHours()
-* Date.prototype.getMilliseconds()
-* Date.prototype.getMinutes()
-* Date.prototype.getMonth()
-
-Etc..
+# Options available
+* Y: For year
+* M: For month
+* D: For the date
+* d: For the day
+* h: For hours
+* m: For minutes
+* s: For seconds

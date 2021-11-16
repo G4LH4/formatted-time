@@ -1,18 +1,18 @@
-export function easierDate(options) {
-  const date = new Date();
+export const getFormattedTime = (format) => {
+  const today = new Date(),
+    time = {
+      Y: today.getFullYear(),
+      M: today.getMonth() + 1,
+      D: today.getDate(),
+      d: today.getDay(),
+      H: today.getHours(),
+      m: today.getMinutes(),
+      S: today.getSeconds(),
+    };
 
-  const todayDate = `${
-    date.getMonth() + 1
-  } / ${date.getDate()} / ${date.getFullYear()}`;
+  const splitMsg = format.split("");
+  const result = splitMsg.map((v) => time[v] || v);
+  const joinStr = result.join("");
 
-  const time = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
-
-  switch (options) {
-    case "getDate":
-      return todayDate;
-    case "getTime":
-      return time;
-    case "getTime&date":
-      return `${time} ${todayDate}`;
-  }
-}
+  return joinStr;
+};

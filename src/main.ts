@@ -1,4 +1,4 @@
-export const getFormattedTime = (format) => {
+export const getFormattedTime = (format: string) => {
   const today = new Date(),
     time = {
       Y: today.getFullYear(),
@@ -11,7 +11,7 @@ export const getFormattedTime = (format) => {
     };
 
   const splitMsg = format.split("");
-  const result = splitMsg.map((v) => time[v] ?? v);
+  const result = splitMsg.map((letter) => time[letter] ?? letter);
   const joinStr = result.join("");
 
   return joinStr;

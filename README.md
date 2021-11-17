@@ -6,12 +6,12 @@ This library was made whit the purpose of use easier way to get the date
 
 `npm i formatted-time --save`
 
-Then you can do: 
+Then you can do:
 
 ```
 import { getFormattedTime } from 'formatted-time';
 
-getFormattedTime('Y-M-D h:m:s'); 
+getFormattedTime('Y-M-D h:m:s');
 
 // E.g
 '2021-11-16 18:40:13'
@@ -19,18 +19,20 @@ getFormattedTime('Y-M-D h:m:s');
 ```
 
 # Options available
-* Y: For year
-* M: For month
-* D: For the date
-* d: For the day
-* h: For hours
-* m: For minutes
-* s: For seconds
+
+- Y: For year
+- M: For month
+- D: For the date
+- d: For the day
+- h: For hours
+- m: For minutes
+- s: For seconds
+- ms: For miliseconds
 
 Keep in main that any other character will be added to the string
 
 ```
-getFormattedTime('Y-M-D h:m:s hello'); 
+getFormattedTime('Y-M-D H:m:s hello');
 
 // E.g
 '2021-11-16 18:40:13 hello'

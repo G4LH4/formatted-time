@@ -1,18 +1,26 @@
+import { checkArgs } from "./componentes/handleParameters.js";
+
 export const getFormattedTime = (format) => {
-  const today = new Date(),
-    time = {
-      Y: today.getFullYear(),
-      M: today.getMonth() + 1,
-      D: today.getDate(),
-      d: today.getDay(),
-      H: today.getHours(),
-      m: today.getMinutes(),
-      S: today.getSeconds(),
-    };
+  try {
+    const date = new Date(),
+      time = {
+        Y: date.getFullYear(),
+        M: date.getMonth() + 1,
+        D: date.getDate(),
+        d: date.getDay(),
+        H: date.getHours(),
+        m: date.getMinutes(),
+        s: date.getSeconds(),
+        ms: date.getMilliseconds(),
+      };
 
-  const splitMsg = format.split("");
-  const result = splitMsg.map((v) => time[v] ?? v);
-  const joinStr = result.join("");
+    checkArgs(format, 1);
+    const splitMsg = format.split("");
+    const result = splitMsg.map((v) => time[v] ?? v);
+    const joinStr = result.join("");
 
-  return joinStr;
+    return joinStr;
+  } catch (error) {
+    console.log(error);
+  }
 };

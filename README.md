@@ -11,7 +11,7 @@ Then you can do:
 ```
 import { getFormattedTime } from 'formatted-time';
 
-getFormattedTime('Y-M-D h:m:s');
+getFormattedTime('Y-M-D H:m:s');
 
 // E.g
 '2021-11-16 18:40:13'

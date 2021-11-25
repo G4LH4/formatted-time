@@ -2,7 +2,7 @@
   "name": "formatted-time",
   "type": "module",
   "version": "1.0.2",
-  "description": "An easiest way to implement the javascript Date",
+  "description": "An easiest way to implement a formatted time",
   "main": "./src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

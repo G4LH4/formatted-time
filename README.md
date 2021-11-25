@@ -27,7 +27,7 @@ getFormattedTime('Y-M-D H:m:s');
 - h: For hours
 - m: For minutes
 - s: For seconds
-- ms: For miliseconds
+- ms: For milliseconds
 
 Keep in main that any other character will be added to the string
 

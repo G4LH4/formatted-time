@@ -1,8 +1,8 @@
-import { checkArgs, checkType } from "../componentes/handleParameters.js";
+import { checkArgs, checkTypeString } from "../componentes/handleParameters.js";
 
 export const getFormattedTime = (format) => {
   checkArgs(format, 1);
-  checkType(format);
+  checkTypeString(format);
 
   const date = new Date();
   const time = {

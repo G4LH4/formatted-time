@@ -14,7 +14,7 @@ import { getFormattedTime } from 'formatted-time';
 getFormattedTime('Y');
 
 // E.g
-'2021'
+2021
 
 ```
 
@@ -47,10 +47,17 @@ Array
 
 ```
     getFormattedTime('arr Y');
+
+    // E.g
+    [2021]
+
 ```
 
 String
 
 ```
     getFormattedTime('str Y');
+
+    // E.g
+    '2021'
 ```

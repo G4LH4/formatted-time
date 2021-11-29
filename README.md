@@ -41,3 +41,16 @@ UTC date:
 - us: For utc minutes
 - ums: For utc seconds
 
+# You can change the date to:
+
+Array
+
+```
+    getFormattedTime('arr Y');
+```
+
+String
+
+```
+    getFormattedTime('str Y');
+```

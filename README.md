@@ -8,10 +8,10 @@ This library was made whit the purpose of use easier way to get the date
 
 Then you can do:
 
-```
+```js
 import { getFormattedTime } from 'formatted-time';
 
-getFormattedTime(type: 'type', format: 'format');
+getFormattedTime({type: 'type', format: 'format'});
 
 // E.g
 getFormattedTime({

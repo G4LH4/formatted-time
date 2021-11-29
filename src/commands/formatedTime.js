@@ -1,56 +1,17 @@
-import {
-  checkArgs,
-  checkTypeString,
-  checkExistenceParam,
-} from "../components/handleParameters.js";
-
 import { time, utcTime } from "../date/index.js";
+import { checkExistenceParam } from "../components/handleParameters.js";
 
-export const getFormattedTime = (format) => {
-  // Check if the format its empty
-  checkArgs(format, 1);
-  // Check if the format its a string
-  checkTypeString(format);
-
-  //Split the format to get the first word and the second one
-  const splitArr = format.split(" ");
-
-  // Check if there is a second word and the first one is "arr"
-  // Convert the format to array
-
-  if (splitArr[1] && splitArr[0] === "arr") {
-    checkExistenceParam(time, utcTime, splitArr[1]);
-
-    const arrFormat = [];
-
-    //
-    const options = switchOptions(splitArr[1], time, utcTime);
-
-    // Insert the data into the array
-    arrFormat.push(options);
-
-    return arrFormat;
+export const getFormattedTime = ({ type, format }) => {
+  if (!format || !type) {
+    throw new Error("Both camps are required");
+  }
+  if (typeof type !== "string" || typeof format !== "string") {
+    throw new Error("Only strings are supported");
   }
 
-  // Check if there is a second word and the first one is "str"
-  // Convert the format to string
-
-  if (splitArr[1] && splitArr[0] === "str") {
-    checkExistenceParam(time, utcTime, splitArr[1]);
-
-    const options = switchOptions(splitArr[1], time, utcTime);
-
-    const formatToStr = options.toString();
-
-    return formatToStr;
-  }
-  // Check if the format exist in the obj of dates (../date/index.js)
-  checkExistenceParam(time, utcTime, format);
-  // Return the place of the object where the format exists
-  return switchOptions(format, time, utcTime);
+  return FORMATS[type](format);
 };
 
-// Runs through all the possible cases
 const switchOptions = (format, time, utcTime) => {
   switch (format) {
     case "Y":
@@ -86,4 +47,35 @@ const switchOptions = (format, time, utcTime) => {
     case "ums":
       return utcTime["ums"];
   }
+};
+
+const FORMATS = {
+  arr: (format) => {
+    const arrFormat = [];
+
+    const options = switchOptions(format, time, utcTime);
+
+    if (options === undefined) throw new Error(`${format} is not supported`);
+
+    // Insert the data into the array
+    arrFormat.push(options);
+
+    return arrFormat;
+  },
+  str: (format) => {
+    const options = switchOptions(format, time, utcTime);
+
+    if (options === undefined) throw new Error(`${format} is not supported`);
+
+    const formatToStr = options.toString();
+
+    return formatToStr;
+  },
+  nmb: (format) => {
+    const options = switchOptions(format, time, utcTime);
+
+    if (options === undefined) throw new Error(`${format} is not supported`);
+
+    return options;
+  },
 };

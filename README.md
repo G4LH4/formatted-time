@@ -11,10 +11,15 @@ Then you can do:
 ```
 import { getFormattedTime } from 'formatted-time';
 
-getFormattedTime('Y');
+getFormattedTime(type: 'type', format: 'format');
 
 // E.g
-2021
+getFormattedTime({
+    type: "arr",
+    format: "Y",
+});
+
+// Output: [2021]
 
 ```
 
@@ -43,21 +48,6 @@ UTC date:
 
 # You can change the date to:
 
-Array
-
-```
-    getFormattedTime('arr Y');
-
-    // E.g
-    [2021]
-
-```
-
-String
-
-```
-    getFormattedTime('str Y');
-
-    // E.g
-    '2021'
-```
+- type: arr
+- type: nmb
+- type: str

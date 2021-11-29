@@ -11,14 +11,16 @@ Then you can do:
 ```
 import { getFormattedTime } from 'formatted-time';
 
-getFormattedTime('Y-M-D H:m:s');
+getFormattedTime('Y');
 
 // E.g
-'2021-11-16 18:40:13'
+'2021'
 
 ```
 
 # Options available
+
+Normal date:
 
 - Y: For year
 - M: For month
@@ -28,11 +30,14 @@ getFormattedTime('Y-M-D H:m:s');
 - m: For minutes
 - s: For seconds
 
-Keep in main that any other character will be added to the string
+UTC date: 
 
-```
-getFormattedTime('Y-M-D H:m:s hello');
+- uY: For utc year
+- uM: For utc month
+- uD: For utc date
+- ud: For utc day
+- uH: For utc hours
+- um: For utc minutes
+- us: For utc minutes
+- ums: For utc seconds
 
-// E.g
-'2021-11-16 18:40:13 hello'
-```

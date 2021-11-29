@@ -49,13 +49,17 @@ const switchOptions = (format, time, utcTime) => {
   }
 };
 
+const checkOptions = (options, format) => {
+  if (options === undefined) throw new Error(`${format} is not supported`);
+};
+
 const FORMATS = {
   arr: (format) => {
     const arrFormat = [];
 
     const options = switchOptions(format, time, utcTime);
 
-    if (options === undefined) throw new Error(`${format} is not supported`);
+    checkOptions(options, format);
 
     // Insert the data into the array
     arrFormat.push(options);
@@ -65,7 +69,7 @@ const FORMATS = {
   str: (format) => {
     const options = switchOptions(format, time, utcTime);
 
-    if (options === undefined) throw new Error(`${format} is not supported`);
+    checkOptions(options, format);
 
     const formatToStr = options.toString();
 
@@ -74,7 +78,7 @@ const FORMATS = {
   nmb: (format) => {
     const options = switchOptions(format, time, utcTime);
 
-    if (options === undefined) throw new Error(`${format} is not supported`);
+    checkOptions(options, format);
 
     return options;
   },

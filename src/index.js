@@ -1,1 +1,1 @@
-export { getFormattedTime } from "./commands/formattedTime";
+export { getFormattedTime } from "./commands/formattedTime.js";

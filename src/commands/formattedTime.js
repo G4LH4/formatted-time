@@ -3,11 +3,14 @@ import {
   checkCamps,
   checkStringParam,
   checkOptions,
+  checkFormats,
 } from "../components/handleParameters.js";
 
 export const getFormattedTime = ({ type, format }) => {
   checkCamps(type, format);
   checkStringParam(type, format);
+
+  checkFormats(FORMATS, type);
 
   return FORMATS[type](format);
 };

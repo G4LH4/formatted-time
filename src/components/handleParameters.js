@@ -21,3 +21,7 @@ export const checkFormats = (FORMATS, type) => {
   if (FORMATS[type] === undefined)
     throw new Error(`Type ${type} not supported`);
 };
+
+export const checkInput = (input, data) => {
+  if (input === undefined) throw new Error(`${data} is not a valid input`);
+};

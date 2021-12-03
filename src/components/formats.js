@@ -40,10 +40,6 @@ class FORMATS {
       if (options == "Invalid Date") throw new Error("Invalid Date format");
     };
 
-    // if (type === undefined) throw new Error("");
-
-    // checkOptions(type, format);
-
     const FORMATS = {
       arr: (format) => {
         const arrFormat = [];

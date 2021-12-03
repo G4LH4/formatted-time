@@ -9,11 +9,12 @@ import FORMATS from "../components/formats.js";
 
 const formats = new FORMATS();
 
+//TODO: HANDLE ERRORS
+
 export const currentTime = ({ type, format }) => {
   checkCamps(type, format);
   checkStringParam(type, format);
 
-  // checkInput(FORMATS[type], type);
   return formats.complexFormats(
     format,
     type,

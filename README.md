@@ -36,6 +36,8 @@ preciseTime({
 ```
 # You can change the date to:
 
+By default it will always be returned as a string
+
 - type: arr
 - type: nmb
 - type: str
@@ -44,6 +46,8 @@ preciseTime({
 
 Normal date:
 
+- currentTime: For the current time
+- today: For the day's date
 - Y: For year
 - M: For month
 - D: For the date
@@ -51,9 +55,13 @@ Normal date:
 - h: For hours
 - m: For minutes
 - s: For seconds
+- ms: For milliseconds
+
 
 UTC date: 
 
+- currentTime: For the utc current time
+- today: For the utc day's date
 - uY: For utc year
 - uM: For utc month
 - uD: For utc date

@@ -27,7 +27,9 @@ class FORMATS {
 
         checkOptions(options, format);
 
-        return options;
+        const parseOptions = parseInt(options);
+
+        return parseOptions;
       },
     };
     checkOptions(FORMATS[type], type);
@@ -71,7 +73,9 @@ class FORMATS {
 
         checkDate(options);
 
-        return options;
+        const parseOptions = parseInt(options);
+
+        return parseOptions;
       },
     };
 

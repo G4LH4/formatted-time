@@ -3,16 +3,20 @@ import {
   checkCamps,
   checkStringParam,
   checkOptions,
+  checkType,
 } from "../components/handleParameters.js";
 
 import FORMATS from "../components/formats.js";
 
 const formats = new FORMATS();
 
-//TODO: HANDLE ERRORS
-
 export const currentTime = ({ type, format }) => {
-  checkCamps(type, format);
+  checkCamps(format);
+
+  if (checkType(type) === null) {
+    type = "str";
+  }
+
   checkStringParam(type, format);
 
   return formats.complexFormats(
@@ -26,5 +30,5 @@ export const currentTime = ({ type, format }) => {
 };
 
 function switchOptions(format, time, utcTime) {
-  return (format.startsWith("u") ? utcTime : time)[format];
+  return format.startsWith("u") ? utcTime : time[format];
 }

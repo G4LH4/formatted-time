@@ -9,8 +9,14 @@ export const checkStringParam = (param1, param2) => {
     throw new Error("Only strings are supported");
 };
 
-export const checkCamps = (param1, param2) => {
-  if (!param1 || !param2) throw new Error("Both camps are required");
+export const checkType = (param1) => {
+  if (param1 === undefined) {
+    return null;
+  }
+};
+
+export const checkCamps = (format) => {
+  if (!format) throw new Error("The format is required");
 };
 
 export const checkOptions = (options, format) => {

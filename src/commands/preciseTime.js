@@ -2,25 +2,23 @@ import {
   checkCamps,
   checkOptions,
   checkStringParam,
+  checkType,
   // checkOptions,
 } from "../components/handleParameters.js";
 
 import FORMATS from "../components/formats.js";
 
-//TODO: HANDLE ERRORS
 const formats = new FORMATS();
 export const preciseTime = ({ type, format }) => {
-  checkCamps(type, format);
+  checkCamps(format);
+
+  if (checkType(type) === null) {
+    type = "str";
+  }
+
   checkStringParam(type, format);
 
-  const convertedFormat = formats.easyFormats(
-    format,
-    type,
-    switchOptions,
-    checkOptions
-  );
-
-  return convertedFormat;
+  return formats.easyFormats(format, type, switchOptions, checkOptions);
 };
 
 function switchOptions(format) {

@@ -138,6 +138,9 @@ Years convert
 - years to century
 - years to dog years
 
+Date convert
+
+- convert param to date
 # Is after
 
 - checks if a date comes after to another
@@ -152,4 +155,8 @@ Years convert
 
 # It happened
 
-- checks if the date already happend
+- checks if the date already happened
+
+Week
+
+- check the day of the week of the param given 

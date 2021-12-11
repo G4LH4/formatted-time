@@ -2,7 +2,7 @@ export { currentTime } from "./commands/currentTime.js";
 export { preciseTime } from "./commands/preciseTime.js";
 export { getCloser } from "./commands/getCloser.js";
 export { daysToWeeks, daysToYear } from "./commands/convertTime/daysConvert.js";
-export { hrToMn, hrToMn, hrToMn } from "./commands/convertTime/hrConvert.js";
+export { hrToMn, hrToMs, hrToSc } from "./commands/convertTime/hrConvert.js";
 export { mnToMs, mnToHr, mnToSc } from "./commands/convertTime/mnConvert.js";
 export { msToSc, msToMinutes } from "./commands/convertTime/msConvert.js";
 export {

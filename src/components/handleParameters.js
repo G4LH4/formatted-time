@@ -25,7 +25,7 @@ export const checkOptions = (options, format) => {
 
 export const checkInstance = (par1, instance) => {
   if (!par1 instanceof instance) {
-    throw new Error(`The first parameter must be ${instance}`);
+    throw new Error(`The parameter must be ${instance}`);
   }
 };
 

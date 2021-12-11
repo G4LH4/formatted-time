@@ -11,7 +11,7 @@ const formats = new FORMATS();
 export const preciseTime = ({ type, format }) => {
   checkFormat(format);
 
-  if (checkType(type) === null) {
+  if (!checkType(type)) {
     type = "str";
   }
 

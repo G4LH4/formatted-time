@@ -34,3 +34,7 @@ export const checkBothCamps = (par1, par2) => {
     throw new Error("Both camps are required");
   }
 };
+
+export const checkCamp = (par1) => {
+  if (!par1) throw new Error("The parameter is required");
+};

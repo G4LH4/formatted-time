@@ -108,7 +108,6 @@ getDate(getCloser(datesArray, dateNow));
 
 ```
 
-
 # ConvertTime
 
 Days convert
@@ -144,10 +143,13 @@ Years convert
 - checks if a date comes after to another
 
 # Is before
+
 - checks if a date comes before to another
 
 # Is date
+
 - checks if the param is a date
 
 # It happened
+
 - checks if the date already happend

@@ -13,9 +13,7 @@ const formats = new FORMATS();
 export const currentTime = ({ type, format }) => {
   checkFormat(format);
 
-  if (checkType(type) === null) {
-    type = "str";
-  }
+  if (!checkType(type)) type = "str";
 
   checkStringParam(type, format);
 

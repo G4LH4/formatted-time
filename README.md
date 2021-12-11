@@ -107,3 +107,47 @@ getDate(getCloser(datesArray, dateNow));
 // Output: { date: 2017-01-01T03:00:00.000Z, timeLeft: 1483239597979 }
 
 ```
+
+
+# ConvertTime
+
+Days convert
+
+- days to weeks
+- days to years
+
+Hours convert
+
+- hours to minutes
+- hours to milliseconds
+- hours to seconds
+
+Minutes convert
+
+- minutes to hours
+- minutes to seconds
+- minutes to milliseconds
+
+Milliseconds convert
+
+- milliseconds to seconds
+- milliseconds to minutes
+
+Years convert
+
+- years to lusters
+- years to century
+- years to dog years
+
+# Is after
+
+- checks if a date comes after to another
+
+# Is before
+- checks if a date comes before to another
+
+# Is date
+- checks if the param is a date
+
+# It happened
+- checks if the date already happend

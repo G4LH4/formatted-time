@@ -1,15 +1,9 @@
-import { checkInstance, checkCamp } from "../../components/handleParameters.js";
+import { roundTime } from "../index.js";
 
 export const msToSc = (ms) => {
-  checkInstance(ms, Number);
-  checkCamp(ms);
-
-  return ms * 0.001;
+  return roundTime(ms, ms * 0.001);
 };
 
 export const msToMinutes = (ms) => {
-  checkInstance(ms, Number);
-  checkCamp(ms);
-
-  return ms * 0.0000166667;
+  return roundTime(ms * 0.0000166667);
 };

@@ -14,7 +14,7 @@ export const time = {
 };
 
 export const utcTime = {
-  uCurrentTime: `${date.getUtcHours()}:${date.getUTCMinutes()}:${date.getUtcSeconds()}`,
+  // uCurrentTime: `${date.getUtcHours()}:${date.getUTCMinutes()}:${date.getUtcSeconds()}`,
   uToday: `${date.getUTCFullYear} / ${date.getUTCMonth} / ${date.getUTCDate()}`,
   uY: date.getUTCFullYear(),
   uM: date.getUTCMonth() + 1,

@@ -1,16 +1,15 @@
 import {
-  checkCamps,
+  checkFormat,
   checkOptions,
   checkStringParam,
   checkType,
-  // checkOptions,
 } from "../components/handleParameters.js";
 
 import FORMATS from "../components/formats.js";
 
 const formats = new FORMATS();
 export const preciseTime = ({ type, format }) => {
-  checkCamps(format);
+  checkFormat(format);
 
   if (checkType(type) === null) {
     type = "str";

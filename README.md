@@ -9,31 +9,30 @@ This library was made whit the purpose of use easier way to get the date
 Then you can do:
 
 ```js
-import { currentTime, preciseTime } from 'formatted-time';
+import { currentTime, preciseTime } from "formatted-time";
 
-currentTime({type: 'type', format: 'format'}); 
-preciseTime({type: 'type', format: 'format' || format})
+currentTime({ type: "type", format: "format" });
+preciseTime({ type: "type", format: "format" || format });
 
 // E.g
 currentTime({
-    type: "arr",
-    format: "Y", // Only strings are supported
-
+  type: "arr",
+  format: "Y", // Only strings are supported
 });
 
 // Output: [2021]
 
 // E.g
-const format = 'December 15, 2015, 13:13:31';
+const format = "December 15, 2015, 13:13:31";
 
 preciseTime({
-    type: 'arr',
-    format: format,
-})
+  type: "arr",
+  format: format,
+});
 
 // Output: [ 2015-12-15T16:15:00.000Z ]
-
 ```
+
 # You can change the date to:
 
 By default it will always be returned as a string
@@ -57,8 +56,7 @@ Normal date:
 - s: For seconds
 - ms: For milliseconds
 
-
-UTC date: 
+UTC date:
 
 - currentTime: For the utc current time
 - today: For the utc day's date
@@ -81,4 +79,31 @@ Whatever is accepted by the native Date
 - 1995-12-17T03:24:00
 - 1995, 11, 17
 - 1995, 11, 17, 3, 24, 0
-- 628021800000   
+- 628021800000
+
+# Get Closer
+
+```js
+
+import { getCloser } from "../src/main.js";
+
+First param must be an array whit all the dates
+const datesArray = [
+  new Date(2015, 0, 1),
+  new Date(2016, 0, 1),
+  new Date(2017, 0, 1),
+  new Date(2010, 0, 1),
+];
+
+Second params must be the date that you want to compare
+const dateNow = new Date(2021);
+
+function getDate(date) {
+  console.log(date);
+}
+
+getDate(getCloser(datesArray, dateNow));
+
+// Output: { date: 2017-01-01T03:00:00.000Z, timeLeft: 1483239597979 }
+
+```

@@ -15,10 +15,22 @@ export const checkType = (param1) => {
   }
 };
 
-export const checkCamps = (format) => {
+export const checkFormat = (format) => {
   if (!format) throw new Error("The format is required");
 };
 
 export const checkOptions = (options, format) => {
   if (options === undefined) throw new Error(`${format} is not supported`);
+};
+
+export const checkInstance = (par1, instance) => {
+  if (!par1 instanceof instance) {
+    throw new Error(`The first parameter must be ${instance}`);
+  }
+};
+
+export const checkBothCamps = (par1, par2) => {
+  if (!par1 || !par2) {
+    throw new Error("Both camps are required");
+  }
 };

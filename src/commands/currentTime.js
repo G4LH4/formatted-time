@@ -1,6 +1,6 @@
 import { time, utcTime } from "../date/index.js";
 import {
-  checkCamps,
+  checkFormat,
   checkStringParam,
   checkOptions,
   checkType,
@@ -11,7 +11,7 @@ import FORMATS from "../components/formats.js";
 const formats = new FORMATS();
 
 export const currentTime = ({ type, format }) => {
-  checkCamps(format);
+  checkFormat(format);
 
   if (checkType(type) === null) {
     type = "str";

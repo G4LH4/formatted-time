@@ -157,6 +157,6 @@ Date convert
 
 - checks if the date already happened
 
-Week
+# Week
 
 - check the day of the week of the param given 

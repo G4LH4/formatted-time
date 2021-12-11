@@ -85,7 +85,7 @@ Whatever is accepted by the native Date
 
 ```js
 
-import { getCloser } from "../src/main.js";
+import { getCloser } from "formatted-time";
 
 First param must be an array whit all the dates
 const datesArray = [

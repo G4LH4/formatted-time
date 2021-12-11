@@ -6,11 +6,11 @@ export { hrToMn, hrToMn, hrToMn } from "./commands/convertTime/hrConvert.js";
 export { mnToMs, mnToHr, mnToSc } from "./commands/convertTime/mnConvert.js";
 export { msToSc, msToMinutes } from "./commands/convertTime/msConvert.js";
 export {
-  yearsConvert,
-  yearsConvert,
-  yearsConvert,
+  yrsToLuster,
+  yrsToCentury,
+  yrsToDogYrs,
 } from "./commands/convertTime/yearsConvert.js";
 export { isAfter } from "./commands/isTime/isAfter.js";
 export { isBefore } from "./commands/isTime/isBefore.js";
 export { isDate } from "./commands/isTime/isDate.js";
-export { alreadyHappened } from "./commands/isTime/itHappend.js";
+export { alreadyHappened } from "./commands/isTime/itHappened.js";

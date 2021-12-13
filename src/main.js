@@ -15,3 +15,4 @@ export { isDate } from "./commands/isTime/isDate.js";
 export { alreadyHappened } from "./commands/isTime/itHappened.js";
 export { isWeekend } from "./commands/isTime/isWeekend.js";
 export { getDay } from "./commands/week/getDay.js";
+export { isPast, isFuture } from "./commands/isTime/isPast-future.js";

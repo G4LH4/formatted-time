@@ -1,13 +1,7 @@
-import {
-  checkBothCamps,
-  checkInstance,
-} from "../components/handleParameters.js";
+import { checkParams } from "../components/index.js";
 
 export const msDifference = (dateLeft, dateRight) => {
-  checkBothCamps(dateLeft, dateRight);
-
-  checkInstance(dateLeft, Date);
-  checkInstance(dateLeft, Date);
+  checkParams(dateLeft, dateRight);
 
   const time1 = dateLeft.getTime();
   const time2 = dateRight.getTime();

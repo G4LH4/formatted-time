@@ -110,53 +110,54 @@ getDate(getCloser(datesArray, dateNow));
 
 # ConvertTime
 
-Days convert
+daysConvert
 
 - days to weeks
 - days to years
 
-Hours convert
+hrConvert
 
 - hours to minutes
 - hours to milliseconds
 - hours to seconds
 
-Minutes convert
+mnConvert
 
 - minutes to hours
 - minutes to seconds
 - minutes to milliseconds
 
-Milliseconds convert
+msConvert
 
 - milliseconds to seconds
 - milliseconds to minutes
 
-Years convert
+yearsConvert
 
 - years to lusters
 - years to century
 - years to dog years
 
-Date convert
+toDate
 
 - convert param to date
-# Is after
+# isAfter
 
 - checks if a date comes after to another
 
-# Is before
+# isBefore
 
 - checks if a date comes before to another
 
-# Is date
+# isDate
 
 - checks if the param is a date
 
-# It happened
+# itHappened
 
 - checks if the date already happened
 
-# Week
+Week
+# getDay
 
 - check the day of the week of the param given 

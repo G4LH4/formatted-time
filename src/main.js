@@ -10,7 +10,8 @@ export {
   yrsToCentury,
   yrsToDogYrs,
 } from "./commands/convertTime/yearsConvert.js";
-export { isAfter } from "./commands/isTime/isAfter.js";
-export { isBefore } from "./commands/isTime/isBefore.js";
+export { isAfter, isBefore } from "./commands/isTime/isAfter/before.js";
 export { isDate } from "./commands/isTime/isDate.js";
 export { alreadyHappened } from "./commands/isTime/itHappened.js";
+export { isWeekend } from "./commands/isTime/isWeekend.js";
+export { getDay } from "./commands/week/getDay.js";

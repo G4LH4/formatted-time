@@ -1,4 +1,4 @@
-export const getDay = async (day) => {
+export const getDay = (day) => {
   if (day instanceof Date === false)
     throw new Error("The param must be a date");
 

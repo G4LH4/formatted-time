@@ -108,6 +108,19 @@ getDate(getCloser(datesArray, dateNow));
 
 ```
 
+# getMax
+
+The param must be an array
+
+- get the max of the dates given
+
+# getMin
+
+The param must be an array
+
+- get the min of the dates given
+
+
 # ConvertTime
 
 daysConvert

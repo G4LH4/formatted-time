@@ -1,7 +1,7 @@
 import {
   checkInstance,
   checkBothCamps,
-} from "../components/handleParameters.js";
+} from "../../components/handleParameters.js";
 
 export const getCloser = (arrayOfDates, dateToGo) => {
   checkBothCamps(arrayOfDates, dateToGo);

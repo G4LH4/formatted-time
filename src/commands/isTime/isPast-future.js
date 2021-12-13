@@ -5,17 +5,24 @@ const isFutureOrPast = (date, isTime) => {
 
   const dateNow = new Date();
 
-  if (date < dateNow && isTime === "past") {
-    return true;
-  } else if (date > dateNow && isTime === "past") {
-    return false;
-  }
+  return checkTime[isTime](date, dateNow);
+};
 
-  if (date < dateNow && isTime === "future") {
+const checkTime = {
+  past: (date, dateNow) => {
+    if (date < dateNow) {
+      return true;
+    }
+
     return false;
-  } else if (date > dateNow && isTime === "future") {
+  },
+  future: (date, dateNow) => {
+    if (date < dateNow) {
+      return false;
+    }
+
     return true;
-  }
+  },
 };
 
 export const isPast = (date) => {

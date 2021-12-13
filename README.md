@@ -153,6 +153,14 @@ toDate
 
 - checks if the param is a date
 
+# isPast
+
+- checks if the date is in the past
+
+# isFuture
+
+- checks if the date is in the future
+
 # itHappened
 
 - checks if the date already happened

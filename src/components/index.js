@@ -23,7 +23,7 @@ export const checkParams = (date1, date2) => {
   checkInstance(date2, Date);
 };
 
-export const isParam = (date1, date2, boolean) => {
+export const isParam = (date1, date2, time) => {
   checkParams(date1, date2);
 
   const dateNow = new Date();
@@ -37,15 +37,22 @@ export const isParam = (date1, date2, boolean) => {
 
   const positionOfMax = dates.indexOf(max);
 
-  if (positionOfMax === 1 && boolean === "after") {
-    return true;
-  } else if (positionOfMax !== 1 && boolean === "after") {
-    return false;
-  }
+  return checkTime[time](positionOfMax);
+};
 
-  if (positionOfMax === 1 && boolean === "before") {
+const checkTime = {
+  after: (positionOfMax) => {
+    if (positionOfMax === 1) {
+      return true;
+    }
+
     return false;
-  } else if (positionOfMax !== 1 && boolean === "before") {
+  },
+  before: (positionOfMax) => {
+    if (positionOfMax === 1) {
+      return false;
+    }
+
     return true;
-  }
+  },
 };

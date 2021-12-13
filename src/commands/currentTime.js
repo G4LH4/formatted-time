@@ -1,4 +1,4 @@
-import { time, utcTime } from "../date/index.js";
+import { time, utcTime } from "../dates-json/index.js";
 import {
   checkFormat,
   checkStringParam,

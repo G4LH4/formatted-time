@@ -28,10 +28,3 @@ const typeOfTime = {
     return res[0];
   },
 };
-
-console.log(
-  getMinMax(
-    [new Date(2020, 1, 2), new Date(2022, 1, 2), new Date(2021, 1, 2)],
-    "max"
-  )
-);

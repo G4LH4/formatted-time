@@ -120,7 +120,6 @@ The param must be an array
 
 - get the min of the dates given
 
-
 # ConvertTime
 
 daysConvert
@@ -154,6 +153,7 @@ yearsConvert
 toDate
 
 - convert param to date
+
 # isAfter
 
 - checks if a date comes after to another
@@ -179,6 +179,7 @@ toDate
 - checks if the date already happened
 
 Week
+
 # getDay
 
-- check the day of the week of the param given 
+- check the day of the week of the param given

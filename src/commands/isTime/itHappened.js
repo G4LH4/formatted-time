@@ -8,7 +8,7 @@ export const alreadyHappened = (date) => {
 
   if (today < date) {
     return false;
+  } else {
+    return true;
   }
-  return true;
-  // return date <= today;
 };

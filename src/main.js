@@ -2,7 +2,7 @@
 
 export { currentTime } from "./commands/currentTime.js";
 export { preciseTime } from "./commands/preciseTime.js";
-export { getCloser } from "./commands/getTime/getCloser";
+export { getCloser } from "./commands/getTime/getCloser.js";
 export { daysToWeeks, daysToYear } from "./commands/convertTime/daysConvert.js";
 export { hrToMn, hrToMs, hrToSc } from "./commands/convertTime/hrConvert.js";
 export { mnToMs, mnToHr, mnToSc } from "./commands/convertTime/mnConvert.js";
@@ -12,7 +12,7 @@ export {
   yrsToCentury,
   yrsToDogYrs,
 } from "./commands/convertTime/yearsConvert.js";
-export { isAfter, isBefore } from "./commands/isTime/isAfter-before";
+export { isAfter, isBefore } from "./commands/isTime/isAfter-before.js";
 export { isDate } from "./commands/isTime/isDate.js";
 export { alreadyHappened } from "./commands/isTime/itHappened.js";
 export { isWeekend } from "./commands/isTime/isWeekend.js";

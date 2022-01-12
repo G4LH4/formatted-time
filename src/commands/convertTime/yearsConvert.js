@@ -1,4 +1,4 @@
-import { roundTime } from "../../components/index";
+import { roundTime } from "../../components/index.js";
 
 export const yrsToLuster = (yrs) => {
   return roundTime(yrs, yrs / 5);

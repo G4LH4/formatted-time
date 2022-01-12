@@ -1,4 +1,4 @@
-import { roundTime } from "../../components/index";
+import { roundTime } from "../../components/index.js";
 
 export const msToSc = (ms) => {
   return roundTime(ms, ms * 0.001);

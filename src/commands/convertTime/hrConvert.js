@@ -1,4 +1,4 @@
-import { roundTime } from "../index.js";
+import { roundTime } from "../../components/index";
 
 export const hrToMn = (hr) => {
   return roundTime(hr, hr * 60);

@@ -124,10 +124,25 @@ The param must be an array
 
 daysConvert
 
+```js
+function printData(data){
+  console.log(daysToWeeks(data))
+  console.log(daysToYears(data))
+}
+```
+
 - days to weeks
 - days to years
 
 hrConvert
+
+```js
+function printData(data){
+  console.log(hrToMn(data))
+  console.log(hrToMs(data))
+  console.log(hrToSc(data))
+}
+```
 
 - hours to minutes
 - hours to milliseconds
@@ -135,16 +150,40 @@ hrConvert
 
 mnConvert
 
+```js
+function printData(data){
+  console.log(mnToHr(data))
+  console.log(mnToSc(data))
+  console.log(mnToMs(data))
+}
+```
+
 - minutes to hours
 - minutes to seconds
 - minutes to milliseconds
 
 msConvert
 
+
+```js
+function printData(data){
+  console.log(msToSc(data))
+  console.log(msToMinutes(data))
+}
+```
+
 - milliseconds to seconds
 - milliseconds to minutes
 
 yearsConvert
+
+```js
+function printData(data){
+  console.log(yrsToLuster(data))
+  console.log(yrsToCentury(data))
+  console.log(yrsToDogYrs(data))
+}
+```
 
 - years to lusters
 - years to century
@@ -152,34 +191,83 @@ yearsConvert
 
 toDate
 
-- convert param to date
+```js
+function printData(data){
+  console.log(toDate(data))
+}
+```
+
+- Convert param to date
 
 # isAfter
 
-- checks if a date comes after to another
+```js
+function printData(date1, date2){
+  console.log(isAfter(date1, date2)) // True or False
+}
+```
+
+- Checks if a date comes after to another
 
 # isBefore
 
-- checks if a date comes before to another
+```js
+function printData(date1, date2){
+  console.log(isBefore(date1, date2)) // True or False
+}
+```
+
+- Checks if a date comes before to another
 
 # isDate
 
-- checks if the param is a date
+```js
+function printData(date){
+  console.log(isDate(date)) // True or False
+}
+```
+
+- Checks if the param is a date
 
 # isPast
 
-- checks if the date is in the past
+```js
+function printData(date){
+  console.log(isPast(date)) // True or False
+}
+```
+
+
+- Checks if the date is in the past
 
 # isFuture
 
-- checks if the date is in the future
+```js
+function printData(date){
+  console.log(isFuture(date)) // True or False
+}
+```
+
+- Checks if the date is in the future
 
 # itHappened
 
-- checks if the date already happened
+```js
+function printData(date){
+  console.log(itHappened(date)) // True or False
+}
+```
+
+- Checks if the date already happened
 
 Week
 
 # getDay
 
-- check the day of the week of the param given
+```js
+function printData(date){
+  console.log(getDay(date)) 
+}
+```
+
+- Prints the day of the week of the param given

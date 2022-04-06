@@ -1,6 +1,6 @@
 # What is this?
 
-This library was made whit the purpose of use easier way to get the date
+This library was made whit the purpose of have an easiest way to use the date
 
 # Installation
 

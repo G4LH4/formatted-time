@@ -5,5 +5,5 @@ export const daysToWeeks = (days) => {
 };
 
 export const daysToYear = (days) => {
-  return roundTime(days, days / 360);
+  return roundTime(days, days / 365);
 };

@@ -5,14 +5,14 @@ import {
 } from "./handleParameters.js";
 
 export const roundTime = (time, operation) => {
-  const isNumber = Number.isInteger(time);
+  const isNumber = typeof time === "number";
 
   if (!isNumber) throw new Error("The param must be a number");
 
   checkCamp(time);
 
   const nm = operation;
-  return parseFloat(nm.toFixed(1));
+  return parseFloat(nm.toFixed(4));
 };
 
 export const checkParams = (date1, date2) => {

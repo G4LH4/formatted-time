@@ -5,5 +5,5 @@ export const msToSc = (ms) => {
 };
 
 export const msToMn = (ms) => {
-  return roundTime(ms * 0.0000166667);
+  return roundTime(ms, ms * 1.6667e-5);
 };

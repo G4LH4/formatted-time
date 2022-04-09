@@ -5,7 +5,7 @@ export const mnToHr = (mn) => {
 };
 
 export const mnToSc = (mn) => {
-  return roundTime(mn, mn * 60);
+  return roundTime(mn, mn / 60);
 };
 
 export const mnToMs = (mn) => {
